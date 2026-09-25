@@ -1,0 +1,44 @@
+# --- Secrets / environment ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- VS Code ---
+.vscode/
+*.code-workspace
+
+# --- Datasets ---
+# Processed data is fully reproducible from dataset/raw via `python -m src.data.clean`.
+dataset/processed/
+*.parquet
+*.zip
+*.xlsx
+# The raw RavenStack CSVs (~2 MB, synthetic, MIT-like license) are committed so the
+# project runs after cloning. Uncomment to exclude them instead:
+# dataset/raw/*.csv
+
+# --- Generated / tool files ---
+*.log
+*.tmp
+*.twbr
+*.tdsr
+~$*
+.DS_Store
+Thumbs.db

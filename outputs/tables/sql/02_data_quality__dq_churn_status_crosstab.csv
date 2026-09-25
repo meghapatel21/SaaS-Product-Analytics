@@ -1,0 +1,3 @@
+churn_flag,with_churn_event,without_churn_event,accounts
+False,277,113,390
+True,75,35,110

@@ -1,0 +1,9 @@
+funnel,stage,accounts,conversion_from_signup,step_conversion,step_drop_off
+trial,1. Signed up,500,1.0,,
+trial,2. Started a trial,403,0.806,0.806,0.19399999999999995
+trial,3. Converted to paid after trial,380,0.76,0.9429280397022333,0.05707196029776673
+trial,4. Retained (not churned),291,0.582,0.7657894736842106,0.23421052631578942
+expansion,1. Signed up,500,1.0,,
+expansion,2. Paying,500,1.0,1.0,0.0
+expansion,3. Upgraded,307,0.614,0.614,0.386
+expansion,4. Retained (not churned),243,0.486,0.7915309446254072,0.20846905537459282

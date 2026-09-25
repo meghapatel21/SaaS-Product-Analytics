@@ -1,0 +1,70 @@
+table,check,n_affected,n_rows,pct_affected,decision
+accounts,full-row duplicates,0,500,0.0,none found
+accounts,duplicate account_id,0,500,0.0,none found; account_id is the primary key
+accounts,unparseable signup_date,0,500,0.0,none found; would be set NULL and flagged
+accounts,signup_date after snapshot 2024-12-31,0,500,0.0,none found
+accounts,industry outside expected categories,0,500,0.0,none found; categories already consistent
+accounts,country outside expected categories,0,500,0.0,none found; categories already consistent
+accounts,referral_source outside expected categories,0,500,0.0,none found; categories already consistent
+accounts,plan_tier outside expected categories,0,500,0.0,none found; categories already consistent
+accounts,seats <= 0,0,500,0.0,none found
+accounts,seats IQR outliers,25,500,5.0,kept: right-skewed seat counts are plausible for larger customers
+subscriptions,full-row duplicates,0,5000,0.0,none found
+subscriptions,duplicate subscription_id,0,5000,0.0,none found
+subscriptions,unparseable start_date,0,5000,0.0,none found; would be set NULL and flagged
+subscriptions,start_date after snapshot 2024-12-31,0,5000,0.0,none found
+subscriptions,unparseable end_date,0,5000,0.0,none found; would be set NULL and flagged
+subscriptions,end_date after snapshot 2024-12-31,0,5000,0.0,none found
+subscriptions,plan_tier outside expected categories,0,5000,0.0,none found; categories already consistent
+subscriptions,billing_frequency outside expected categories,0,5000,0.0,none found; categories already consistent
+subscriptions,end_date < start_date,0,5000,0.0,none found
+subscriptions,end_date == start_date (0-day subscription),13,5000,0.26,kept + flagged: same-day cancellation is a genuine business case
+subscriptions,start_date < account signup_date,0,5000,0.0,none found
+subscriptions,churn_flag inconsistent with end_date presence,0,5000,0.0,none found: churn_flag = TRUE exactly when end_date is set
+subscriptions,mrr_amount != seats x list price (0 for trials),0,5000,0.0,"none found: pricing is deterministic (Basic $19, Pro $49, Enterprise $199 per seat)"
+subscriptions,arr_amount != 12 x mrr_amount,0,5000,0.0,none found
+subscriptions,negative mrr/arr/seats,0,5000,0.0,none found
+subscriptions,upgrade_flag AND downgrade_flag both TRUE,23,5000,0.46,"kept + flagged: possible if plan moved both ways mid-cycle, but suspicious"
+subscriptions,mrr_amount IQR outliers,471,5000,9.42,"kept: explained by seats x Enterprise price, not errors"
+feature_usage,full-row duplicates,0,25000,0.0,none found
+feature_usage,usage_id shared by different records,42,25000,0.17,"kept all rows (records differ in every attribute = ID collision, not duplication); added surrogate primary key usage_row_id"
+feature_usage,rows sharing subscription_id + usage_date + feature_name,6,25000,0.02,kept + flagged: multiple sessions of one feature on one day are plausible
+feature_usage,unparseable usage_date,0,25000,0.0,none found; would be set NULL and flagged
+feature_usage,usage_date after snapshot 2024-12-31,0,25000,0.0,none found
+feature_usage,negative usage_count,0,25000,0.0,none found
+feature_usage,negative usage_duration_secs,0,25000,0.0,none found
+feature_usage,negative error_count,0,25000,0.0,none found
+feature_usage,usage_count == 0,2,25000,0.01,kept + flagged (also have 0 duration: consistent empty session)
+feature_usage,usage_duration_secs IQR outliers,145,25000,0.58,"kept: max 12,696 s (3.5 h) is plausible"
+feature_usage,usage_date before its subscription start_date,19142,25000,76.57,"kept + flagged: systemic (generator did not align dates). Usage is used for lifetime behaviour, NOT lifecycle timing"
+feature_usage,usage_date after its subscription end_date,290,25000,1.16,kept + flagged
+feature_usage,usage_date before account signup_date,13198,25000,52.79,kept + flagged: rules out activation / time-to-first-use analysis
+feature_usage,features whose is_beta_feature varies across rows,40,40,100.0,"kept: beta is treated as an attribute of the usage event (e.g. beta release of a feature), not of the feature"
+support_tickets,full-row duplicates,0,2000,0.0,none found
+support_tickets,duplicate ticket_id,0,2000,0.0,none found
+support_tickets,unparseable submitted_at,0,2000,0.0,none found; would be set NULL and flagged
+support_tickets,submitted_at after snapshot 2024-12-31,0,2000,0.0,none found
+support_tickets,unparseable closed_at,0,2000,0.0,none found; would be set NULL and flagged
+support_tickets,closed_at after snapshot 2024-12-31,0,2000,0.0,none found
+support_tickets,priority outside expected categories,0,2000,0.0,none found; categories already consistent
+support_tickets,closed_at < submitted_at,0,2000,0.0,none found
+support_tickets,resolution_time_hours != closed_at - submitted_at,0,2000,0.0,none found
+support_tickets,first_response_time_minutes > resolution time,36,2000,1.8,kept + flagged: logically impossible; excluded from first-response metrics
+support_tickets,satisfaction_score outside 1-5,0,2000,0.0,none found
+support_tickets,satisfaction_score NULL (no survey response),825,2000,41.25,kept NULL (documented meaning: no response); never imputed. Note observed scores are only 3-5
+support_tickets,ticket submitted before account signup_date,1077,2000,53.85,kept + flagged: systemic date misalignment; tickets used as lifetime support load only
+churn_events,full-row duplicates,0,600,0.0,none found
+churn_events,duplicate churn_event_id,0,600,0.0,none found
+churn_events,unparseable churn_date,0,600,0.0,none found; would be set NULL and flagged
+churn_events,churn_date after snapshot 2024-12-31,0,600,0.0,none found
+churn_events,reason_code outside expected categories,0,600,0.0,none found; categories already consistent
+churn_events,second event for same account_id + churn_date,1,600,0.17,kept + flagged; excluded from event counts (one account cannot churn twice on one day)
+churn_events,churn_date < account signup_date,0,600,0.0,none found
+churn_events,negative refund_amount_usd,0,600,0.0,none found
+churn_events,feedback_text NULL,148,600,24.67,kept NULL (optional comment)
+churn_events,preceding_upgrade_flag AND preceding_downgrade_flag,8,600,1.33,kept: both can happen within a 90-day window
+accounts,churn_flag disagrees with presence of churn_events,312,500,62.4,"kept + flagged. Decision: churn_flag = account churn STATUS (primary churn label); churn_events = churn EPISODES (reasons, timing, reactivations)"
+subscriptions,orphan account_id (foreign key),0,5000,0.0,none found
+feature_usage,orphan subscription_id (foreign key),0,25000,0.0,none found
+support_tickets,orphan account_id (foreign key),0,2000,0.0,none found
+churn_events,orphan account_id (foreign key),0,600,0.0,none found

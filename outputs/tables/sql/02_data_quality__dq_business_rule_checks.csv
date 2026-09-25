@@ -1,0 +1,12 @@
+check_name,recomputed,stored_flag,flag_matches
+subscriptions: 0-day subscription,13,13,True
+subscriptions: mrr != seats x list price,0,0,True
+subscriptions: upgrade and downgrade flags both set,23,23,True
+feature_usage: usage before subscription start,19142,19142,True
+feature_usage: usage after subscription end,290,290,True
+feature_usage: usage before account signup,13198,13198,True
+feature_usage: usage_id reused by different records,42,42,True
+support_tickets: first response slower than resolution,36,36,True
+support_tickets: submitted before account signup,1077,1077,True
+churn_events: repeated account + churn_date,1,1,True
+accounts: churn_flag disagrees with churn_events,312,312,True

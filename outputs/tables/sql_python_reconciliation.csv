@@ -1,0 +1,13 @@
+check,rows_compared,unmatched_keys,value_mismatches,max_abs_diff,passed
+monthly KPIs,24,0,0,3.637978807091713e-12,True
+headline KPIs,27,0,0,1.4210854715202004e-14,True
+funnels (overall),8,0,0,1.1102230246251565e-16,True
+funnels by segment,168,0,0,2.220446049250313e-16,True
+feature summary,40,0,0,1.4210854715202004e-14,True
+segment profile,4,0,0,8.326672684688674e-17,True
+segment thresholds,5,0,0,1.3877787807814457e-17,True
+subscription retention windows,126,0,0,2.220446049250313e-16,True
+account retention windows,121,0,0,2.220446049250313e-16,True
+cohort retention matrix,234,0,0,2.220446049250313e-16,True
+churn by segment,63,0,0,2.220446049250313e-16,True
+churn reasons,6,0,0,0.0,True

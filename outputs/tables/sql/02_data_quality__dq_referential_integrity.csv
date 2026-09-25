@@ -1,0 +1,6 @@
+relationship,orphan_rows
+subscriptions -> accounts,0
+feature_usage -> subscriptions,0
+support_tickets -> accounts,0
+churn_events -> accounts,0
+accounts without any subscription,0

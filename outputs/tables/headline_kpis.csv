@@ -1,0 +1,28 @@
+area,metric,value,formula
+Accounts,Total accounts,500.0,COUNT(DISTINCT account_id)
+Accounts,New accounts 2023,227.0,accounts with signup_date in 2023
+Accounts,New accounts 2024,273.0,accounts with signup_date in 2024
+Revenue,Active subscriptions at snapshot,4514.0,subscriptions with end_date IS NULL
+Revenue,MRR at snapshot ($),10159608.0,SUM(mrr_amount) of active subscriptions
+Revenue,ARR at snapshot ($),121915296.0,SUM(arr_amount) of active subscriptions = 12 x MRR
+Revenue,ARPA ($/month),20319.216,MRR / paying accounts
+Revenue,Revenue per paid seat ($/month),89.58141995556026,MRR / SUM(seats) of active paid subscriptions
+Conversion,Accounts that ever started a trial,403.0,accounts with >=1 is_trial subscription
+Conversion,Trial-to-paid conversion rate,0.9429280397022333,trial accounts with a paid subscription starting on/after first trial start / trial accounts
+Churn,Account churn rate (churn_flag),0.22,accounts with churn_flag = TRUE / total accounts
+Churn,Logo retention rate (1 - account churn),0.78,accounts with churn_flag = FALSE / total accounts
+Churn,Accounts with >=1 churn event,0.704,accounts in churn_events / total accounts (includes reactivated accounts)
+Churn,Reactivation share of churn events,0.1018363939899833,churn events with is_reactivation = TRUE / churn events
+Churn,Lifetime subscription churn rate,0.0972,subscriptions with an end_date / all subscriptions
+Churn,Avg monthly subscription churn rate 2024,0.012517000228283441,mean over 2024 of (ended from start-of-month base / start-of-month base)
+Churn,Avg monthly gross MRR churn rate 2024,0.012063059580856031,mean over 2024 of (MRR ended from base / start-of-month MRR)
+Expansion,Subscription upgrade rate,0.1058,subscriptions with upgrade_flag / all subscriptions
+Expansion,Subscription downgrade rate,0.0436,subscriptions with downgrade_flag / all subscriptions
+Engagement,Mean feature adoption rate (40 features),0.6904,mean over features of (accounts using feature / total accounts)
+Engagement,Median distinct features per account,28.0,median of COUNT(DISTINCT feature_name) per account
+Support,Tickets per account,4.0,tickets / total accounts
+Support,Escalation rate,0.0475,escalated tickets / tickets
+Support,CSAT response rate,0.5875,tickets with satisfaction_score / tickets
+Support,"Average CSAT (1-5, responders)",3.981276595744681,AVG(satisfaction_score) where not NULL
+Support,Median resolution time (hours),35.0,median resolution_time_hours
+Support,Median first response (minutes),87.0,"median first_response_time_minutes, excluding 36 impossible records"

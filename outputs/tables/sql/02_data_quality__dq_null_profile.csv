@@ -1,0 +1,5 @@
+column_name,null_rows,total_rows
+subscriptions.end_date,4514,5000
+support_tickets.satisfaction_score,825,2000
+churn_events.feedback_text,148,600
+accounts.first_churn_date,148,500

@@ -1,0 +1,9 @@
+engagement_segment,high_friction,accounts,churn_rate
+Power Accounts,False,65,0.24615384615384615385
+Power Accounts,True,32,0.15625000000000000000
+Engaged Accounts,False,92,0.29347826086956521739
+Engaged Accounts,True,61,0.24590163934426229508
+Casual Accounts,False,87,0.21839080459770114943
+Casual Accounts,True,40,0.17500000000000000000
+Low-Engagement Accounts,False,69,0.18840579710144927536
+Low-Engagement Accounts,True,54,0.14814814814814814815

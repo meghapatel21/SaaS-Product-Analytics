@@ -1,0 +1,5 @@
+stage,accounts,step_conversion,step_drop_off,drop_off_rank
+1. Signed up,500,,,4
+2. Started a trial,403,0.80600000000000000000,0.19400000000000000000,2
+3. Converted to paid after trial,380,0.94292803970223325062,0.05707196029776674938,3
+4. Retained (not churned),291,0.76578947368421052632,0.23421052631578947368,1

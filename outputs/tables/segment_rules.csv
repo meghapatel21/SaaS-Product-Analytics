@@ -1,0 +1,6 @@
+segment,rule
+Power Accounts,total_usage_count >= 619 (P75) AND distinct_features >= 32 (P75)
+Engaged Accounts,not Power AND total_usage_count >= 498 (P50)
+Casual Accounts,373 (P25) <= total_usage_count < 498 (P50)
+Low-Engagement Accounts,total_usage_count < 373 (P25)
+high_friction (overlay),error_rate >= 0.0658 (P75) OR any escalated ticket

@@ -1,0 +1,1747 @@
+{
+  "segment_thresholds": {
+    "usage_p25": 373.0,
+    "usage_p50": 498.5,
+    "usage_p75": 619.25,
+    "breadth_p75": 32.0,
+    "error_rate_p75": 0.06575358947621722
+  },
+  "segment_profile": [
+    {
+      "engagement_segment": "Power Accounts",
+      "accounts": 97,
+      "median_usage_count": 709.0,
+      "median_distinct_features": 34.0,
+      "median_duration_hours": 59.63361111111111,
+      "mean_error_rate": 0.05651756432033563,
+      "mean_tickets": 3.804123711340206,
+      "high_friction_share": 0.32989690721649484,
+      "mrr_at_snapshot": 2779239,
+      "churn_rate": 0.21649484536082475,
+      "share_of_accounts": 0.194
+    },
+    {
+      "engagement_segment": "Engaged Accounts",
+      "accounts": 153,
+      "median_usage_count": 574.0,
+      "median_distinct_features": 30.0,
+      "median_duration_hours": 48.10638888888889,
+      "mean_error_rate": 0.056613470990179535,
+      "mean_tickets": 4.084967320261438,
+      "high_friction_share": 0.39869281045751637,
+      "mrr_at_snapshot": 3382563,
+      "churn_rate": 0.27450980392156865,
+      "share_of_accounts": 0.306
+    },
+    {
+      "engagement_segment": "Casual Accounts",
+      "accounts": 127,
+      "median_usage_count": 439.0,
+      "median_distinct_features": 27.0,
+      "median_duration_hours": 37.09972222222222,
+      "mean_error_rate": 0.055564707220675524,
+      "mean_tickets": 4.0236220472440944,
+      "high_friction_share": 0.31496062992125984,
+      "mrr_at_snapshot": 2498967,
+      "churn_rate": 0.2047244094488189,
+      "share_of_accounts": 0.254
+    },
+    {
+      "engagement_segment": "Low-Engagement Accounts",
+      "accounts": 123,
+      "median_usage_count": 296.0,
+      "median_distinct_features": 20.0,
+      "median_duration_hours": 24.830833333333334,
+      "mean_error_rate": 0.05722761693360926,
+      "mean_tickets": 4.024390243902439,
+      "high_friction_share": 0.43902439024390244,
+      "mrr_at_snapshot": 1498839,
+      "churn_rate": 0.17073170731707318,
+      "share_of_accounts": 0.246
+    }
+  ],
+  "clustering_best": {
+    "k": 2.0,
+    "silhouette": 0.2710192260780482,
+    "smallest_cluster_share": 0.44
+  },
+  "features": {
+    "top5": [
+      {
+        "feature_name": "feature_12",
+        "adoption_rate": 0.748,
+        "adopting_accounts": 374
+      },
+      {
+        "feature_name": "feature_17",
+        "adoption_rate": 0.732,
+        "adopting_accounts": 366
+      },
+      {
+        "feature_name": "feature_2",
+        "adoption_rate": 0.72,
+        "adopting_accounts": 360
+      },
+      {
+        "feature_name": "feature_36",
+        "adoption_rate": 0.718,
+        "adopting_accounts": 359
+      },
+      {
+        "feature_name": "feature_39",
+        "adoption_rate": 0.712,
+        "adopting_accounts": 356
+      }
+    ],
+    "bottom5": [
+      {
+        "feature_name": "feature_19",
+        "adoption_rate": 0.67,
+        "adopting_accounts": 335
+      },
+      {
+        "feature_name": "feature_22",
+        "adoption_rate": 0.668,
+        "adopting_accounts": 334
+      },
+      {
+        "feature_name": "feature_20",
+        "adoption_rate": 0.668,
+        "adopting_accounts": 334
+      },
+      {
+        "feature_name": "feature_23",
+        "adoption_rate": 0.658,
+        "adopting_accounts": 329
+      },
+      {
+        "feature_name": "feature_18",
+        "adoption_rate": 0.654,
+        "adopting_accounts": 327
+      }
+    ],
+    "adoption_rate_min": 0.654,
+    "adoption_rate_max": 0.748,
+    "adoption_rate_mean": 0.6904,
+    "underutilized": [
+      "feature_33",
+      "feature_6",
+      "feature_30",
+      "feature_1",
+      "feature_31",
+      "feature_27",
+      "feature_29",
+      "feature_16",
+      "feature_10",
+      "feature_40",
+      "feature_22",
+      "feature_20"
+    ],
+    "errors_per_100_uses_max": {
+      "feature_name": "feature_4",
+      "errors_per_100_uses": 6.557891433950424
+    },
+    "errors_per_100_uses_min": {
+      "feature_name": "feature_20",
+      "errors_per_100_uses": 4.708760128420731
+    },
+    "plan_profile": [
+      {
+        "plan_tier": "Basic",
+        "usage_events": 7980,
+        "subscriptions_with_usage": 1588,
+        "accounts_with_usage": 479,
+        "total_usage_count": 79888,
+        "total_errors": 4435,
+        "avg_minutes_per_event": 50.312466583124476,
+        "subscriptions": 1602,
+        "events_per_subscription": 4.9812734082397006,
+        "distinct_features_per_subscription": 4.7311083123425695,
+        "errors_per_100_uses": 5.551522130983376
+      },
+      {
+        "plan_tier": "Pro",
+        "usage_events": 8440,
+        "subscriptions_with_usage": 1665,
+        "accounts_with_usage": 474,
+        "total_usage_count": 84561,
+        "total_errors": 4817,
+        "avg_minutes_per_event": 50.63005331753554,
+        "subscriptions": 1675,
+        "events_per_subscription": 5.038805970149253,
+        "distinct_features_per_subscription": 4.769369369369369,
+        "errors_per_100_uses": 5.696479464528565
+      },
+      {
+        "plan_tier": "Enterprise",
+        "usage_events": 8580,
+        "subscriptions_with_usage": 1714,
+        "accounts_with_usage": 478,
+        "total_usage_count": 86076,
+        "total_errors": 4855,
+        "avg_minutes_per_event": 51.13909090909091,
+        "subscriptions": 1723,
+        "events_per_subscription": 4.97968659315148,
+        "distinct_features_per_subscription": 4.694865810968495,
+        "errors_per_100_uses": 5.640364329197453
+      }
+    ],
+    "beta_vs_ga": [
+      {
+        "is_beta_feature": false,
+        "usage_events": 22456,
+        "mean_usage_count": 10.016877449234057,
+        "mean_minutes": 50.689735482721765,
+        "mean_errors_per_event": 0.565149625935162,
+        "share_events_with_error": 0.3096277164232277,
+        "errors_per_100_uses": 5.641974046296996
+      },
+      {
+        "is_beta_feature": true,
+        "usage_events": 2544,
+        "mean_usage_count": 10.057389937106919,
+        "mean_minutes": 50.823833857442345,
+        "mean_errors_per_event": 0.5566037735849056,
+        "share_events_with_error": 0.3058176100628931,
+        "errors_per_100_uses": 5.534276557492379
+      }
+    ],
+    "monthly_accounts_with_usage_min": 409,
+    "monthly_accounts_with_usage_max": 440
+  },
+  "headline_kpis": {
+    "Total accounts": 500.0,
+    "New accounts 2023": 227.0,
+    "New accounts 2024": 273.0,
+    "Active subscriptions at snapshot": 4514.0,
+    "MRR at snapshot ($)": 10159608.0,
+    "ARR at snapshot ($)": 121915296.0,
+    "ARPA ($/month)": 20319.216,
+    "Revenue per paid seat ($/month)": 89.58141995556026,
+    "Accounts that ever started a trial": 403.0,
+    "Trial-to-paid conversion rate": 0.9429280397022333,
+    "Account churn rate (churn_flag)": 0.22,
+    "Logo retention rate (1 - account churn)": 0.78,
+    "Accounts with >=1 churn event": 0.704,
+    "Reactivation share of churn events": 0.1018363939899833,
+    "Lifetime subscription churn rate": 0.0972,
+    "Avg monthly subscription churn rate 2024": 0.012517000228283441,
+    "Avg monthly gross MRR churn rate 2024": 0.012063059580856031,
+    "Subscription upgrade rate": 0.1058,
+    "Subscription downgrade rate": 0.0436,
+    "Mean feature adoption rate (40 features)": 0.6904,
+    "Median distinct features per account": 28.0,
+    "Tickets per account": 4.0,
+    "Escalation rate": 0.0475,
+    "CSAT response rate": 0.5875,
+    "Average CSAT (1-5, responders)": 3.981276595744681,
+    "Median resolution time (hours)": 35.0,
+    "Median first response (minutes)": 87.0
+  },
+  "mrr_2023_12": 1262113,
+  "monthly_churn_2024_range": [
+    0.0072992700729927005,
+    0.02397442727757059
+  ],
+  "support_by_priority": [
+    {
+      "priority": "low",
+      "tickets": 485,
+      "avg_resolution_hours": 36.34639175257732,
+      "median_first_response_minutes": 95.0,
+      "escalation_rate": 0.04742268041237113,
+      "csat_response_rate": 0.5917525773195876,
+      "avg_csat": 4.020905923344948
+    },
+    {
+      "priority": "medium",
+      "tickets": 491,
+      "avg_resolution_hours": 35.59470468431772,
+      "median_first_response_minutes": 81.0,
+      "escalation_rate": 0.05091649694501019,
+      "csat_response_rate": 0.594704684317719,
+      "avg_csat": 3.934931506849315
+    },
+    {
+      "priority": "high",
+      "tickets": 510,
+      "avg_resolution_hours": 36.95882352941177,
+      "median_first_response_minutes": 91.0,
+      "escalation_rate": 0.047058823529411764,
+      "csat_response_rate": 0.5784313725490197,
+      "avg_csat": 3.9966101694915253
+    },
+    {
+      "priority": "urgent",
+      "tickets": 514,
+      "avg_resolution_hours": 34.568093385214006,
+      "median_first_response_minutes": 83.0,
+      "escalation_rate": 0.04474708171206226,
+      "csat_response_rate": 0.585603112840467,
+      "avg_csat": 3.973421926910299
+    }
+  ],
+  "funnels": {
+    "trial": [
+      {
+        "funnel": "trial",
+        "stage": "1. Signed up",
+        "accounts": 500,
+        "conversion_from_signup": 1.0,
+        "step_conversion": NaN,
+        "step_drop_off": NaN
+      },
+      {
+        "funnel": "trial",
+        "stage": "2. Started a trial",
+        "accounts": 403,
+        "conversion_from_signup": 0.806,
+        "step_conversion": 0.806,
+        "step_drop_off": 0.19399999999999995
+      },
+      {
+        "funnel": "trial",
+        "stage": "3. Converted to paid after trial",
+        "accounts": 380,
+        "conversion_from_signup": 0.76,
+        "step_conversion": 0.9429280397022333,
+        "step_drop_off": 0.05707196029776673
+      },
+      {
+        "funnel": "trial",
+        "stage": "4. Retained (not churned)",
+        "accounts": 291,
+        "conversion_from_signup": 0.582,
+        "step_conversion": 0.7657894736842106,
+        "step_drop_off": 0.23421052631578942
+      }
+    ],
+    "expansion": [
+      {
+        "funnel": "expansion",
+        "stage": "1. Signed up",
+        "accounts": 500,
+        "conversion_from_signup": 1.0,
+        "step_conversion": NaN,
+        "step_drop_off": NaN
+      },
+      {
+        "funnel": "expansion",
+        "stage": "2. Paying",
+        "accounts": 500,
+        "conversion_from_signup": 1.0,
+        "step_conversion": 1.0,
+        "step_drop_off": 0.0
+      },
+      {
+        "funnel": "expansion",
+        "stage": "3. Upgraded",
+        "accounts": 307,
+        "conversion_from_signup": 0.614,
+        "step_conversion": 0.614,
+        "step_drop_off": 0.386
+      },
+      {
+        "funnel": "expansion",
+        "stage": "4. Retained (not churned)",
+        "accounts": 243,
+        "conversion_from_signup": 0.486,
+        "step_conversion": 0.7915309446254072,
+        "step_drop_off": 0.20846905537459282
+      }
+    ]
+  },
+  "funnel_bottleneck": {
+    "trial": {
+      "stage": "4. Retained (not churned)",
+      "step_drop_off": 0.23421052631578942
+    },
+    "expansion": {
+      "stage": "3. Upgraded",
+      "step_drop_off": 0.386
+    }
+  },
+  "trial_conversion_by_segment_range": {
+    "industry": {
+      "min": {
+        "segment": "FinTech",
+        "step_conversion": 0.9318181818181818,
+        "accounts": 82
+      },
+      "max": {
+        "segment": "HealthTech",
+        "step_conversion": 0.961038961038961,
+        "accounts": 74
+      }
+    },
+    "plan_tier": {
+      "min": {
+        "segment": "Pro",
+        "step_conversion": 0.9295774647887324,
+        "accounts": 132
+      },
+      "max": {
+        "segment": "Enterprise",
+        "step_conversion": 0.9669421487603306,
+        "accounts": 117
+      }
+    },
+    "referral_source": {
+      "min": {
+        "segment": "partner",
+        "step_conversion": 0.918918918918919,
+        "accounts": 68
+      },
+      "max": {
+        "segment": "organic",
+        "step_conversion": 0.963855421686747,
+        "accounts": 80
+      }
+    },
+    "signup_quarter": {
+      "min": {
+        "segment": "2023Q4",
+        "step_conversion": 0.9056603773584906,
+        "accounts": 48
+      },
+      "max": {
+        "segment": "2024Q3",
+        "step_conversion": 0.9821428571428571,
+        "accounts": 55
+      }
+    }
+  },
+  "retention": {
+    "subscription_overall": [
+      {
+        "window_days": 1,
+        "eligible": 4955,
+        "retention_rate": 0.9983854692230071
+      },
+      {
+        "window_days": 7,
+        "eligible": 4751,
+        "retention_rate": 0.9886339717954115
+      },
+      {
+        "window_days": 14,
+        "eligible": 4523,
+        "retention_rate": 0.9812071633871324
+      },
+      {
+        "window_days": 30,
+        "eligible": 4066,
+        "retention_rate": 0.9744220363994097
+      },
+      {
+        "window_days": 60,
+        "eligible": 3450,
+        "retention_rate": 0.9663768115942029
+      },
+      {
+        "window_days": 90,
+        "eligible": 2954,
+        "retention_rate": 0.9583615436696006
+      }
+    ],
+    "subscription_km_overall": [
+      {
+        "group": "All",
+        "day": 1,
+        "km_survival": 0.9949805942995754,
+        "n": 5000
+      },
+      {
+        "group": "All",
+        "day": 7,
+        "km_survival": 0.9826108542468335,
+        "n": 5000
+      },
+      {
+        "group": "All",
+        "day": 14,
+        "km_survival": 0.9708440315332028,
+        "n": 5000
+      },
+      {
+        "group": "All",
+        "day": 30,
+        "km_survival": 0.9551656960870799,
+        "n": 5000
+      },
+      {
+        "group": "All",
+        "day": 60,
+        "km_survival": 0.9345812530153517,
+        "n": 5000
+      },
+      {
+        "group": "All",
+        "day": 90,
+        "km_survival": 0.9215193444215232,
+        "n": 5000
+      }
+    ],
+    "subscription_d90_by": [
+      {
+        "dimension": "overall",
+        "group": "All",
+        "eligible": 2954,
+        "retention_rate": 0.9583615436696006
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Basic",
+        "eligible": 965,
+        "retention_rate": 0.9585492227979274
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Enterprise",
+        "eligible": 1005,
+        "retention_rate": 0.9601990049751243
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Pro",
+        "eligible": 984,
+        "retention_rate": 0.9563008130081301
+      },
+      {
+        "dimension": "billing_frequency",
+        "group": "annual",
+        "eligible": 1438,
+        "retention_rate": 0.9561891515994436
+      },
+      {
+        "dimension": "billing_frequency",
+        "group": "monthly",
+        "eligible": 1516,
+        "retention_rate": 0.9604221635883905
+      },
+      {
+        "dimension": "referral_source",
+        "group": "ads",
+        "eligible": 662,
+        "retention_rate": 0.9546827794561934
+      },
+      {
+        "dimension": "referral_source",
+        "group": "event",
+        "eligible": 523,
+        "retention_rate": 0.9579349904397706
+      },
+      {
+        "dimension": "referral_source",
+        "group": "organic",
+        "eligible": 627,
+        "retention_rate": 0.9617224880382775
+      },
+      {
+        "dimension": "referral_source",
+        "group": "other",
+        "eligible": 593,
+        "retention_rate": 0.954468802698145
+      },
+      {
+        "dimension": "referral_source",
+        "group": "partner",
+        "eligible": 549,
+        "retention_rate": 0.9635701275045537
+      },
+      {
+        "dimension": "is_trial",
+        "group": "False",
+        "eligible": 2486,
+        "retention_rate": 0.9593724859211585
+      },
+      {
+        "dimension": "is_trial",
+        "group": "True",
+        "eligible": 468,
+        "retention_rate": 0.9529914529914529
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q1 (lowest)",
+        "eligible": 350,
+        "retention_rate": 0.9685714285714285
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q2",
+        "eligible": 530,
+        "retention_rate": 0.9584905660377359
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q3",
+        "eligible": 987,
+        "retention_rate": 0.9544072948328267
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q4 (highest)",
+        "eligible": 1087,
+        "retention_rate": 0.9586016559337627
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Power Accounts",
+        "eligible": 822,
+        "retention_rate": 0.9525547445255474
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Engaged Accounts",
+        "eligible": 1053,
+        "retention_rate": 0.9667616334283001
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Casual Accounts",
+        "eligible": 667,
+        "retention_rate": 0.9460269865067467
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Low-Engagement Accounts",
+        "eligible": 412,
+        "retention_rate": 0.9684466019417476
+      },
+      {
+        "dimension": "start_quarter",
+        "group": "2023Q1",
+        "eligible": 31,
+        "retention_rate": 1.0
+      },
+      {
+        "dimension": "start_quarter",
+        "group": "2023Q2",
+        "eligible": 106,
+        "retention_rate": 0.9905660377358491
+      },
+      {
+        "dimension": "start_quarter",
+        "group": "2023Q3",
+        "eligible": 203,
+        "retention_rate": 0.9655172413793104
+      },
+      {
+        "dimension": "start_quarter",
+        "group": "2023Q4",
+        "eligible": 326,
+        "retention_rate": 0.9785276073619632
+      },
+      {
+        "dimension": "start_quarter",
+        "group": "2024Q1",
+        "eligible": 472,
+        "retention_rate": 0.9682203389830508
+      },
+      {
+        "dimension": "start_quarter",
+        "group": "2024Q2",
+        "eligible": 686,
+        "retention_rate": 0.9708454810495627
+      },
+      {
+        "dimension": "start_quarter",
+        "group": "2024Q3",
+        "eligible": 1107,
+        "retention_rate": 0.9349593495934959
+      },
+      {
+        "dimension": "start_quarter",
+        "group": "2024Q4",
+        "eligible": 23,
+        "retention_rate": 0.9565217391304348
+      }
+    ],
+    "account_overall": [
+      {
+        "window_days": 30,
+        "eligible": 483,
+        "retention_rate": 0.8364389233954451
+      },
+      {
+        "window_days": 60,
+        "eligible": 452,
+        "retention_rate": 0.745575221238938
+      },
+      {
+        "window_days": 90,
+        "eligible": 422,
+        "retention_rate": 0.6848341232227488
+      },
+      {
+        "window_days": 180,
+        "eligible": 351,
+        "retention_rate": 0.5612535612535613
+      },
+      {
+        "window_days": 365,
+        "eligible": 228,
+        "retention_rate": 0.4166666666666667
+      }
+    ],
+    "account_km_overall": [
+      {
+        "group": "All",
+        "day": 30,
+        "km_survival": 0.8170207704077825,
+        "n": 500
+      },
+      {
+        "group": "All",
+        "day": 60,
+        "km_survival": 0.6965052444873985,
+        "n": 500
+      },
+      {
+        "group": "All",
+        "day": 90,
+        "km_survival": 0.615901472307837,
+        "n": 500
+      },
+      {
+        "group": "All",
+        "day": 180,
+        "km_survival": 0.47001000284788813,
+        "n": 500
+      },
+      {
+        "group": "All",
+        "day": 365,
+        "km_survival": 0.2873441904600625,
+        "n": 500
+      }
+    ],
+    "account_by_dim_d90_d180": [
+      {
+        "dimension": "signup_quarter",
+        "group": "2023Q1",
+        "window_days": 90,
+        "eligible": 55,
+        "retention_rate": 0.8181818181818182
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2023Q1",
+        "window_days": 180,
+        "eligible": 55,
+        "retention_rate": 0.6363636363636364
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2023Q2",
+        "window_days": 90,
+        "eligible": 54,
+        "retention_rate": 0.8703703703703703
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2023Q2",
+        "window_days": 180,
+        "eligible": 54,
+        "retention_rate": 0.8333333333333334
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2023Q3",
+        "window_days": 90,
+        "eligible": 53,
+        "retention_rate": 0.8490566037735849
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2023Q3",
+        "window_days": 180,
+        "eligible": 53,
+        "retention_rate": 0.660377358490566
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2023Q4",
+        "window_days": 90,
+        "eligible": 65,
+        "retention_rate": 0.7384615384615385
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2023Q4",
+        "window_days": 180,
+        "eligible": 65,
+        "retention_rate": 0.5538461538461539
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2024Q1",
+        "window_days": 90,
+        "eligible": 56,
+        "retention_rate": 0.6964285714285714
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2024Q1",
+        "window_days": 180,
+        "eligible": 56,
+        "retention_rate": 0.42857142857142855
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2024Q2",
+        "window_days": 90,
+        "eligible": 65,
+        "retention_rate": 0.5384615384615384
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2024Q2",
+        "window_days": 180,
+        "eligible": 65,
+        "retention_rate": 0.3384615384615385
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2024Q3",
+        "window_days": 90,
+        "eligible": 72,
+        "retention_rate": 0.4166666666666667
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2024Q3",
+        "window_days": 180,
+        "eligible": 3,
+        "retention_rate": 0.0
+      },
+      {
+        "dimension": "signup_quarter",
+        "group": "2024Q4",
+        "window_days": 90,
+        "eligible": 2,
+        "retention_rate": 0.0
+      },
+      {
+        "dimension": "referral_source",
+        "group": "ads",
+        "window_days": 90,
+        "eligible": 89,
+        "retention_rate": 0.7191011235955056
+      },
+      {
+        "dimension": "referral_source",
+        "group": "ads",
+        "window_days": 180,
+        "eligible": 79,
+        "retention_rate": 0.5949367088607594
+      },
+      {
+        "dimension": "referral_source",
+        "group": "event",
+        "window_days": 90,
+        "eligible": 79,
+        "retention_rate": 0.7215189873417721
+      },
+      {
+        "dimension": "referral_source",
+        "group": "event",
+        "window_days": 180,
+        "eligible": 66,
+        "retention_rate": 0.5606060606060606
+      },
+      {
+        "dimension": "referral_source",
+        "group": "organic",
+        "window_days": 90,
+        "eligible": 91,
+        "retention_rate": 0.6373626373626373
+      },
+      {
+        "dimension": "referral_source",
+        "group": "organic",
+        "window_days": 180,
+        "eligible": 72,
+        "retention_rate": 0.5694444444444444
+      },
+      {
+        "dimension": "referral_source",
+        "group": "other",
+        "window_days": 90,
+        "eligible": 87,
+        "retention_rate": 0.6781609195402298
+      },
+      {
+        "dimension": "referral_source",
+        "group": "other",
+        "window_days": 180,
+        "eligible": 72,
+        "retention_rate": 0.5416666666666666
+      },
+      {
+        "dimension": "referral_source",
+        "group": "partner",
+        "window_days": 90,
+        "eligible": 76,
+        "retention_rate": 0.6710526315789473
+      },
+      {
+        "dimension": "referral_source",
+        "group": "partner",
+        "window_days": 180,
+        "eligible": 62,
+        "retention_rate": 0.532258064516129
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Basic",
+        "window_days": 90,
+        "eligible": 136,
+        "retention_rate": 0.6985294117647058
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Basic",
+        "window_days": 180,
+        "eligible": 110,
+        "retention_rate": 0.5636363636363636
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Enterprise",
+        "window_days": 90,
+        "eligible": 133,
+        "retention_rate": 0.6842105263157895
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Enterprise",
+        "window_days": 180,
+        "eligible": 110,
+        "retention_rate": 0.5727272727272728
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Pro",
+        "window_days": 90,
+        "eligible": 153,
+        "retention_rate": 0.673202614379085
+      },
+      {
+        "dimension": "plan_tier",
+        "group": "Pro",
+        "window_days": 180,
+        "eligible": 131,
+        "retention_rate": 0.549618320610687
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q1 (lowest)",
+        "window_days": 90,
+        "eligible": 81,
+        "retention_rate": 0.7037037037037037
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q1 (lowest)",
+        "window_days": 180,
+        "eligible": 67,
+        "retention_rate": 0.4925373134328358
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q2",
+        "window_days": 90,
+        "eligible": 90,
+        "retention_rate": 0.7
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q2",
+        "window_days": 180,
+        "eligible": 74,
+        "retention_rate": 0.5675675675675675
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q3",
+        "window_days": 90,
+        "eligible": 130,
+        "retention_rate": 0.6692307692307692
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q3",
+        "window_days": 180,
+        "eligible": 111,
+        "retention_rate": 0.6036036036036037
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q4 (highest)",
+        "window_days": 90,
+        "eligible": 121,
+        "retention_rate": 0.6776859504132231
+      },
+      {
+        "dimension": "breadth_quartile",
+        "group": "Q4 (highest)",
+        "window_days": 180,
+        "eligible": 99,
+        "retention_rate": 0.5555555555555556
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Power Accounts",
+        "window_days": 90,
+        "eligible": 86,
+        "retention_rate": 0.686046511627907
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Power Accounts",
+        "window_days": 180,
+        "eligible": 70,
+        "retention_rate": 0.5142857142857142
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Engaged Accounts",
+        "window_days": 90,
+        "eligible": 133,
+        "retention_rate": 0.6917293233082706
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Engaged Accounts",
+        "window_days": 180,
+        "eligible": 113,
+        "retention_rate": 0.6371681415929203
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Casual Accounts",
+        "window_days": 90,
+        "eligible": 106,
+        "retention_rate": 0.6509433962264151
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Casual Accounts",
+        "window_days": 180,
+        "eligible": 92,
+        "retention_rate": 0.5434782608695652
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Low-Engagement Accounts",
+        "window_days": 90,
+        "eligible": 97,
+        "retention_rate": 0.711340206185567
+      },
+      {
+        "dimension": "engagement_segment",
+        "group": "Low-Engagement Accounts",
+        "window_days": 180,
+        "eligible": 76,
+        "retention_rate": 0.5131578947368421
+      }
+    ],
+    "quarterly_subscription_cohorts": [
+      {
+        "group": "2023Q1",
+        "1": 1.0,
+        "7": 1.0,
+        "14": 1.0,
+        "30": 1.0,
+        "60": 1.0,
+        "90": 1.0
+      },
+      {
+        "group": "2023Q2",
+        "1": 1.0,
+        "7": 0.9905660377358491,
+        "14": 0.9905660377358491,
+        "30": 0.9905660377358491,
+        "60": 0.9905660377358491,
+        "90": 0.9905660377358491
+      },
+      {
+        "group": "2023Q3",
+        "1": 1.0,
+        "7": 0.9950738916256158,
+        "14": 0.9950738916256158,
+        "30": 0.9901477832512315,
+        "60": 0.9852216748768473,
+        "90": 0.9655172413793104
+      },
+      {
+        "group": "2023Q4",
+        "1": 1.0,
+        "7": 1.0,
+        "14": 1.0,
+        "30": 0.9938650306748467,
+        "60": 0.99079754601227,
+        "90": 0.9785276073619632
+      },
+      {
+        "group": "2024Q1",
+        "1": 1.0,
+        "7": 0.9978813559322034,
+        "14": 0.9978813559322034,
+        "30": 0.9915254237288136,
+        "60": 0.9809322033898306,
+        "90": 0.9682203389830508
+      },
+      {
+        "group": "2024Q2",
+        "1": 1.0,
+        "7": 0.9985422740524781,
+        "14": 0.9970845481049563,
+        "30": 0.9941690962099126,
+        "60": 0.9839650145772595,
+        "90": 0.9708454810495627
+      },
+      {
+        "group": "2024Q3",
+        "1": 1.0,
+        "7": 0.996386630532972,
+        "14": 0.990063233965673,
+        "30": 0.9774164408310749,
+        "60": 0.952122854561879,
+        "90": 0.9349593495934959
+      },
+      {
+        "group": "2024Q4",
+        "1": 0.9960474308300395,
+        "7": 0.9747252747252747,
+        "14": 0.9566582914572864,
+        "30": 0.9418502202643172,
+        "60": 0.930635838150289,
+        "90": 0.9565217391304348
+      }
+    ],
+    "cohort_m3_worst": {
+      "2024-09": 0.9136363636363637,
+      "2024-08": 0.9317507418397626,
+      "2023-09": 0.9516129032258065
+    },
+    "cohort_m3_best": {
+      "2023-01": 1.0,
+      "2023-02": 1.0,
+      "2023-03": 1.0
+    }
+  },
+  "churn": {
+    "overall_account_churn_rate": 0.22,
+    "dimension_tests": [
+      {
+        "dimension": "industry",
+        "chi2": 8.823167912517638,
+        "dof": 4,
+        "p_value": 0.06567465981750352,
+        "cramers_v": 0.13283951153566953,
+        "min_expected_count": 17.38,
+        "groups": 5,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "referral_source",
+        "chi2": 8.356557981979153,
+        "dof": 4,
+        "p_value": 0.07935639594437033,
+        "cramers_v": 0.12927921706120557,
+        "min_expected_count": 19.58,
+        "groups": 5,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "usage_quartile",
+        "chi2": 5.292543702376619,
+        "dof": 3,
+        "p_value": 0.15158695132404698,
+        "cramers_v": 0.1028838539555806,
+        "min_expected_count": 27.06,
+        "groups": 4,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "engagement_segment",
+        "chi2": 4.568787975588754,
+        "dof": 3,
+        "p_value": 0.20623601436577904,
+        "cramers_v": 0.09559066874532006,
+        "min_expected_count": 21.34,
+        "groups": 4,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "high_friction",
+        "chi2": 1.583525220572254,
+        "dof": 1,
+        "p_value": 0.2082536438104988,
+        "cramers_v": 0.056276553209525085,
+        "min_expected_count": 41.14,
+        "groups": 2,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "breadth_quartile",
+        "chi2": 4.32981098025679,
+        "dof": 3,
+        "p_value": 0.22798244646250804,
+        "cramers_v": 0.09305708979177019,
+        "min_expected_count": 23.1,
+        "groups": 4,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "tenure_bucket",
+        "chi2": 4.284910765308826,
+        "dof": 3,
+        "p_value": 0.23229701110232848,
+        "cramers_v": 0.09257333055809136,
+        "min_expected_count": 24.86,
+        "groups": 4,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "highest_plan_tier",
+        "chi2": 1.3018760409157075,
+        "dof": 1,
+        "p_value": 0.25387082732566435,
+        "cramers_v": 0.05102697406109258,
+        "min_expected_count": 4.62,
+        "groups": 2,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "has_trial_subscription",
+        "chi2": 1.0991029895637094,
+        "dof": 1,
+        "p_value": 0.2944630448887578,
+        "cramers_v": 0.0468850293710841,
+        "min_expected_count": 21.34,
+        "groups": 2,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "is_trial",
+        "chi2": 0.7443035761574557,
+        "dof": 1,
+        "p_value": 0.3882857671584188,
+        "cramers_v": 0.03858247208662129,
+        "min_expected_count": 21.34,
+        "groups": 2,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "ticket_bucket",
+        "chi2": 3.6578112545227444,
+        "dof": 4,
+        "p_value": 0.4542917371183236,
+        "cramers_v": 0.0855314124111457,
+        "min_expected_count": 1.76,
+        "groups": 5,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "any_escalation",
+        "chi2": 0.48149455710110306,
+        "dof": 1,
+        "p_value": 0.487746122488257,
+        "cramers_v": 0.031032065902904468,
+        "min_expected_count": 20.02,
+        "groups": 2,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "any_upgrade",
+        "chi2": 0.45446893601355115,
+        "dof": 1,
+        "p_value": 0.5002203324853509,
+        "cramers_v": 0.030148596518363872,
+        "min_expected_count": 42.46,
+        "groups": 2,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "signup_quarter",
+        "chi2": 5.805852600174632,
+        "dof": 7,
+        "p_value": 0.5625932201742223,
+        "cramers_v": 0.10775762246982468,
+        "min_expected_count": 11.66,
+        "groups": 8,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "country",
+        "chi2": 4.1321293567609825,
+        "dof": 6,
+        "p_value": 0.658801048683201,
+        "cramers_v": 0.09090796837198577,
+        "min_expected_count": 4.84,
+        "groups": 7,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "any_downgrade",
+        "chi2": 0.1056822172422736,
+        "dof": 1,
+        "p_value": 0.7451144596993132,
+        "cramers_v": 0.01453837798671321,
+        "min_expected_count": 38.94,
+        "groups": 2,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      },
+      {
+        "dimension": "plan_tier",
+        "chi2": 0.0014385228889824903,
+        "dof": 2,
+        "p_value": 0.9992809971620159,
+        "cramers_v": 0.0016961856555120906,
+        "min_expected_count": 33.88,
+        "groups": 3,
+        "p_holm": 1.0,
+        "significant_after_holm": false
+      }
+    ],
+    "numeric_top": [
+      {
+        "feature": "avg_first_response_minutes",
+        "median_churned": 82.5,
+        "median_retained": 89.16666666666666,
+        "mean_churned": 83.11433763536567,
+        "mean_retained": 88.87983358510701,
+        "n_churned": 107,
+        "n_retained": 384,
+        "mann_whitney_u": 17970.0,
+        "p_value": 0.04739069825060004,
+        "rank_biserial": 0.12529205607476634,
+        "p_holm": 0.7582511720096007
+      },
+      {
+        "feature": "tenure_days",
+        "median_churned": 379.5,
+        "median_retained": 301.0,
+        "mean_churned": 371.6727272727273,
+        "mean_retained": 329.43333333333334,
+        "n_churned": 110,
+        "n_retained": 390,
+        "mann_whitney_u": 23982.0,
+        "p_value": 0.05854795482564179,
+        "rank_biserial": -0.11804195804195805,
+        "p_holm": 0.8782193223846269
+      },
+      {
+        "feature": "error_rate",
+        "median_churned": 0.053698969009962974,
+        "median_retained": 0.05498051713287182,
+        "mean_churned": 0.053858220294555975,
+        "mean_retained": 0.057218910943663076,
+        "n_churned": 110,
+        "n_retained": 390,
+        "mann_whitney_u": 19341.5,
+        "p_value": 0.11522832829729412,
+        "rank_biserial": 0.09829836829836824,
+        "p_holm": 1.0
+      },
+      {
+        "feature": "total_duration_hours",
+        "median_churned": 43.58444444444444,
+        "median_retained": 41.40416666666667,
+        "mean_churned": 43.98542676767677,
+        "mean_retained": 41.76413319088319,
+        "n_churned": 110,
+        "n_retained": 390,
+        "mann_whitney_u": 23154.0,
+        "p_value": 0.20306292699620299,
+        "rank_biserial": -0.07944055944055939,
+        "p_holm": 1.0
+      },
+      {
+        "feature": "total_usage_count",
+        "median_churned": 527.5,
+        "median_retained": 491.0,
+        "mean_churned": 522.0363636363636,
+        "mean_retained": 495.1307692307692,
+        "n_churned": 110,
+        "n_retained": 390,
+        "mann_whitney_u": 23143.5,
+        "p_value": 0.20585894382071646,
+        "rank_biserial": -0.07895104895104899,
+        "p_holm": 1.0
+      },
+      {
+        "feature": "distinct_features",
+        "median_churned": 29.0,
+        "median_retained": 28.0,
+        "mean_churned": 28.336363636363636,
+        "mean_retained": 27.412820512820513,
+        "n_churned": 110,
+        "n_retained": 390,
+        "mann_whitney_u": 23101.0,
+        "p_value": 0.21658723589339746,
+        "rank_biserial": -0.07696969696969691,
+        "p_holm": 1.0
+      }
+    ],
+    "reasons": [
+      {
+        "reason_code": "features",
+        "events": 114,
+        "accounts": 104,
+        "refund_share": 0.21052631578947367,
+        "total_refund_usd": 1905.9,
+        "preceding_upgrade_share": 0.14912280701754385,
+        "preceding_downgrade_share": 0.07894736842105263,
+        "reactivation_share": 0.11403508771929824,
+        "share_of_events": 0.19031719532554256
+      },
+      {
+        "reason_code": "budget",
+        "events": 104,
+        "accounts": 94,
+        "refund_share": 0.23076923076923078,
+        "total_refund_usd": 1247.54,
+        "preceding_upgrade_share": 0.23076923076923078,
+        "preceding_downgrade_share": 0.057692307692307696,
+        "reactivation_share": 0.11538461538461539,
+        "share_of_events": 0.17362270450751252
+      },
+      {
+        "reason_code": "support",
+        "events": 104,
+        "accounts": 95,
+        "refund_share": 0.2692307692307692,
+        "total_refund_usd": 1219.64,
+        "preceding_upgrade_share": 0.2692307692307692,
+        "preceding_downgrade_share": 0.125,
+        "reactivation_share": 0.057692307692307696,
+        "share_of_events": 0.17362270450751252
+      },
+      {
+        "reason_code": "unknown",
+        "events": 95,
+        "accounts": 86,
+        "refund_share": 0.2736842105263158,
+        "total_refund_usd": 1742.39,
+        "preceding_upgrade_share": 0.2,
+        "preceding_downgrade_share": 0.09473684210526316,
+        "reactivation_share": 0.09473684210526316,
+        "share_of_events": 0.15859766277128548
+      },
+      {
+        "reason_code": "competitor",
+        "events": 92,
+        "accounts": 79,
+        "refund_share": 0.1956521739130435,
+        "total_refund_usd": 1203.53,
+        "preceding_upgrade_share": 0.18478260869565216,
+        "preceding_downgrade_share": 0.13043478260869565,
+        "reactivation_share": 0.13043478260869565,
+        "share_of_events": 0.15358931552587646
+      },
+      {
+        "reason_code": "pricing",
+        "events": 90,
+        "accounts": 86,
+        "refund_share": 0.24444444444444444,
+        "total_refund_usd": 1333.25,
+        "preceding_upgrade_share": 0.2,
+        "preceding_downgrade_share": 0.044444444444444446,
+        "reactivation_share": 0.1,
+        "share_of_events": 0.15025041736227046
+      }
+    ]
+  },
+  "tests": [
+    {
+      "test_id": "T1",
+      "statistic_name": "chi2 (dof=2)",
+      "statistic": 0.0014385228889824903,
+      "p_value": 0.9992809971620159,
+      "p_holm": 1.0,
+      "reject_h0": false,
+      "effect_size_name": "Cramer's V",
+      "effect_size": 0.0016961856555120906,
+      "observed": "Pro: 21.9% (n=178); Basic: 22.0% (n=168); Enterprise: 22.1% (n=154)",
+      "ci": "n/a (omnibus test); per-group Wilson CIs in churn_by_segment.csv"
+    },
+    {
+      "test_id": "T2",
+      "statistic_name": "chi2 (dof=4)",
+      "statistic": 8.356557981979153,
+      "p_value": 0.07935639594437033,
+      "p_holm": 0.7935639594437033,
+      "reject_h0": false,
+      "effect_size_name": "Cramer's V",
+      "effect_size": 0.12927921706120557,
+      "observed": "partner: 14.6% (n=89); organic: 17.5% (n=114); ads: 23.5% (n=98); other: 24.3% (n=103); event: 30.2% (n=96)",
+      "ci": "n/a (omnibus test); per-group Wilson CIs in churn_by_segment.csv"
+    },
+    {
+      "test_id": "T3",
+      "statistic_name": "chi2 (dof=4)",
+      "statistic": 8.823167912517638,
+      "p_value": 0.06567465981750352,
+      "p_holm": 0.7224212579925388,
+      "reject_h0": false,
+      "effect_size_name": "Cramer's V",
+      "effect_size": 0.13283951153566953,
+      "observed": "Cybersecurity: 16.0% (n=100); EdTech: 16.5% (n=79); HealthTech: 21.9% (n=96); FinTech: 22.3% (n=112); DevTools: 31.0% (n=113)",
+      "ci": "n/a (omnibus test); per-group Wilson CIs in churn_by_segment.csv"
+    },
+    {
+      "test_id": "T4",
+      "statistic_name": "z",
+      "statistic": 1.727334068350122,
+      "p_value": 0.0841076840722676,
+      "p_holm": 0.7935639594437033,
+      "reject_h0": false,
+      "effect_size_name": "Cohen's h",
+      "effect_size": 0.15486506446489778,
+      "observed": "High engagement (Power+Engaged): 25.2% (63/250); Low engagement (Casual+Low): 18.8% (47/250)",
+      "ci": "difference 6.4% [95% CI -0.9%, 13.6%] (Newcombe)"
+    },
+    {
+      "test_id": "T5",
+      "statistic_name": "chi2 (dof=1)",
+      "statistic": 0.9356101757358762,
+      "p_value": 0.3334093550302476,
+      "p_holm": 1.0,
+      "reject_h0": false,
+      "effect_size_name": "difference in share with churn event",
+      "effect_size": 0.008000000000000007,
+      "observed": "Low engagement: 70.0% had a churn event (n=250); High engagement: 70.8% had a churn event (n=250)",
+      "ci": "n/a"
+    },
+    {
+      "test_id": "T6",
+      "statistic_name": "z",
+      "statistic": 1.4505418572186657,
+      "p_value": 0.14690747565353104,
+      "p_holm": 1.0,
+      "reject_h0": false,
+      "effect_size_name": "Cohen's h",
+      "effect_size": 0.13240195933363108,
+      "observed": "Broad adopters (>= 28 features): 24.3% (70/288); Narrow adopters: 18.9% (40/212)",
+      "ci": "difference 5.4% [95% CI -2.0%, 12.5%] (Newcombe)"
+    },
+    {
+      "test_id": "T7",
+      "statistic_name": "U",
+      "statistic": 23143.5,
+      "p_value": 0.20585894382071646,
+      "p_holm": 1.0,
+      "reject_h0": false,
+      "effect_size_name": "rank-biserial r",
+      "effect_size": -0.07895104895104899,
+      "observed": "median churned 528 (n=110); median retained 491 (n=390)",
+      "ci": "median difference (churned - retained) 36.5 [95% bootstrap CI -16.5, 77.0]"
+    },
+    {
+      "test_id": "T8",
+      "statistic_name": "chi2 (dof=2)",
+      "statistic": 0.5157957620103095,
+      "p_value": 0.7726741327840133,
+      "p_holm": 1.0,
+      "reject_h0": false,
+      "effect_size_name": "max - min ended share",
+      "effect_size": 0.004944486831970782,
+      "observed": "Basic: 9.5% ended (n=1602); Enterprise: 10.0% ended (n=1723); Pro: 9.7% ended (n=1675)",
+      "ci": "n/a"
+    },
+    {
+      "test_id": "T9",
+      "statistic_name": "odds ratio",
+      "statistic": 1.2518593644354294,
+      "p_value": 0.40363951981534785,
+      "p_holm": 1.0,
+      "reject_h0": false,
+      "effect_size_name": "odds ratio",
+      "effect_size": 1.2518593644354294,
+      "observed": "escalated: 25.3% churn (n=91); not escalated: 21.3% (n=409)",
+      "ci": "odds ratio 95% CI [0.74, 2.12]"
+    },
+    {
+      "test_id": "T10",
+      "statistic_name": "U",
+      "statistic": 28470682.5,
+      "p_value": 0.7402463927424299,
+      "p_holm": 1.0,
+      "reject_h0": false,
+      "effect_size_name": "rank-biserial r",
+      "effect_size": 0.0032680785401725254,
+      "observed": "beta events n=2544; non-beta n=22456",
+      "ci": "mean errors/event: beta 0.557 vs non-beta 0.565"
+    },
+    {
+      "test_id": "T11",
+      "statistic_name": "H (dof=3)",
+      "statistic": 3.407461313320696,
+      "p_value": 0.3329638843440793,
+      "p_holm": 1.0,
+      "reject_h0": false,
+      "effect_size_name": "epsilon-squared",
+      "effect_size": 0.0017045829481344152,
+      "observed": "low: mean 36.3 h (n=485); medium: mean 35.6 h (n=491); high: mean 37.0 h (n=510); urgent: mean 34.6 h (n=514)",
+      "ci": "median resolution hours: low 36.0; medium 34.0; high 38.0; urgent 33.0"
+    }
+  ],
+  "model": {
+    "metrics": [
+      {
+        "model": "Baseline (stratified dummy)",
+        "cv_roc_auc_mean": 0.49708624708624705,
+        "cv_roc_auc_std": 0.04030679828855612,
+        "test_roc_auc": 0.551209372637944,
+        "test_auc_ci_low": 0.4528651474527763,
+        "test_auc_ci_high": 0.6508960721716476,
+        "precision": 0.2962962962962963,
+        "recall": 0.2962962962962963,
+        "f1": 0.2962962962962963,
+        "tn": 79,
+        "fp": 19,
+        "fn": 19,
+        "tp": 8
+      },
+      {
+        "model": "Logistic Regression",
+        "cv_roc_auc_mean": 0.5177855477855478,
+        "cv_roc_auc_std": 0.062156543218187955,
+        "test_roc_auc": 0.5793650793650793,
+        "test_auc_ci_low": 0.4414179189658096,
+        "test_auc_ci_high": 0.7073043962509982,
+        "precision": 0.23636363636363636,
+        "recall": 0.48148148148148145,
+        "f1": 0.3170731707317073,
+        "tn": 56,
+        "fp": 42,
+        "fn": 14,
+        "tp": 13
+      },
+      {
+        "model": "Random Forest",
+        "cv_roc_auc_mean": 0.5307925407925408,
+        "cv_roc_auc_std": 0.059518135766048905,
+        "test_roc_auc": 0.5925925925925926,
+        "test_auc_ci_low": 0.46077059689855326,
+        "test_auc_ci_high": 0.7168707509558024,
+        "precision": 0.6666666666666666,
+        "recall": 0.07407407407407407,
+        "f1": 0.13333333333333333,
+        "tn": 97,
+        "fp": 1,
+        "fn": 25,
+        "tp": 2
+      }
+    ],
+    "n_train": 375,
+    "n_test": 125,
+    "top_permutation": [
+      {
+        "feature": "error_rate",
+        "importance_mean": 0.06165280927185686,
+        "importance_std": 0.025108391429592758
+      },
+      {
+        "feature": "referral_source",
+        "importance_mean": 0.03145628621819095,
+        "importance_std": 0.011865477795189264
+      },
+      {
+        "feature": "tenure_days",
+        "importance_mean": 0.02945326278659611,
+        "importance_std": 0.015351835948061152
+      },
+      {
+        "feature": "avg_first_response_minutes",
+        "importance_mean": 0.026366843033509682,
+        "importance_std": 0.03398135187733984
+      },
+      {
+        "feature": "avg_resolution_hours",
+        "importance_mean": 0.016187956664147123,
+        "importance_std": 0.015703568114053833
+      }
+    ]
+  },
+  "experiment_power": {
+    "new_accounts_per_month_2024": 22.75,
+    "table": [
+      {
+        "metric": "account churn rate (churn_flag)",
+        "baseline_rate (observed)": 0.22,
+        "absolute_mde (design choice)": 0.02,
+        "target_rate": 0.2,
+        "accounts_per_arm": 6508,
+        "total_accounts": 13016,
+        "months_of_new_accounts_needed": 572.1318681318681
+      },
+      {
+        "metric": "account churn rate (churn_flag)",
+        "baseline_rate (observed)": 0.22,
+        "absolute_mde (design choice)": 0.05,
+        "target_rate": 0.16999999999999998,
+        "accounts_per_arm": 983,
+        "total_accounts": 1966,
+        "months_of_new_accounts_needed": 86.41758241758242
+      },
+      {
+        "metric": "account churn rate (churn_flag)",
+        "baseline_rate (observed)": 0.22,
+        "absolute_mde (design choice)": 0.1,
+        "target_rate": 0.12,
+        "accounts_per_arm": 218,
+        "total_accounts": 436,
+        "months_of_new_accounts_needed": 19.164835164835164
+      },
+      {
+        "metric": "churn event within 90 days of signup",
+        "baseline_rate (observed)": 0.31516587677725116,
+        "absolute_mde (design choice)": 0.02,
+        "target_rate": 0.29516587677725115,
+        "accounts_per_arm": 8320,
+        "total_accounts": 16640,
+        "months_of_new_accounts_needed": 731.4285714285714
+      },
+      {
+        "metric": "churn event within 90 days of signup",
+        "baseline_rate (observed)": 0.31516587677725116,
+        "absolute_mde (design choice)": 0.05,
+        "target_rate": 0.2651658767772512,
+        "accounts_per_arm": 1292,
+        "total_accounts": 2584,
+        "months_of_new_accounts_needed": 113.58241758241758
+      },
+      {
+        "metric": "churn event within 90 days of signup",
+        "baseline_rate (observed)": 0.31516587677725116,
+        "absolute_mde (design choice)": 0.1,
+        "target_rate": 0.21516587677725116,
+        "accounts_per_arm": 304,
+        "total_accounts": 608,
+        "months_of_new_accounts_needed": 26.725274725274726
+      }
+    ]
+  }
+}

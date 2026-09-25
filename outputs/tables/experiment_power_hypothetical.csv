@@ -1,0 +1,7 @@
+metric,baseline_rate (observed),absolute_mde (design choice),target_rate,accounts_per_arm,total_accounts,months_of_new_accounts_needed
+account churn rate (churn_flag),0.22,0.02,0.2,6508,13016,572.1318681318681
+account churn rate (churn_flag),0.22,0.05,0.16999999999999998,983,1966,86.41758241758242
+account churn rate (churn_flag),0.22,0.1,0.12,218,436,19.164835164835164
+churn event within 90 days of signup,0.31516587677725116,0.02,0.29516587677725115,8320,16640,731.4285714285714
+churn event within 90 days of signup,0.31516587677725116,0.05,0.2651658767772512,1292,2584,113.58241758241758
+churn event within 90 days of signup,0.31516587677725116,0.1,0.21516587677725116,304,608,26.725274725274726

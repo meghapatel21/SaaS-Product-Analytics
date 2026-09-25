@@ -1,0 +1,13 @@
+engagement_segment,account_name,plan_tier,mrr_at_snapshot,total_usage_count,distinct_features,rank_in_segment
+Power Accounts,Company_166,Pro,131911,869,34,1
+Power Accounts,Company_368,Pro,94710,685,32,2
+Power Accounts,Company_358,Enterprise,69687,807,32,3
+Engaged Accounts,Company_337,Basic,70644,587,35,1
+Engaged Accounts,Company_341,Enterprise,70000,566,28,2
+Engaged Accounts,Company_174,Basic,69230,600,31,3
+Casual Accounts,Company_403,Basic,114777,488,30,1
+Casual Accounts,Company_130,Basic,83886,475,27,2
+Casual Accounts,Company_23,Basic,75938,402,28,3
+Low-Engagement Accounts,Company_480,Enterprise,70980,363,24,1
+Low-Engagement Accounts,Company_177,Enterprise,54605,271,16,2
+Low-Engagement Accounts,Company_226,Pro,47955,357,21,3
