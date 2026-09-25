@@ -170,7 +170,16 @@ Eleven pre-specified tests with alpha = 0.05 on Holm-adjusted p-values, each doc
 
 Three dashboards built on the validated extracts, in [tableau/SaaS Project.twb](tableau/): **Product & Revenue Overview**, **Feature Adoption & Engagement**, and **Retention & Churn**. Sheet-by-sheet documentation is in [tableau/README.md](tableau/README.md); every measure is listed in [tableau/calculated_fields.md](tableau/calculated_fields.md).
 
+**1 · Product & Revenue Overview** — revenue trend, acquisition, churn velocity and the trial funnel.
+
 ![Product & Revenue Overview](tableau/screenshots/01_product_revenue_overview.png)
+
+**2 · Feature Adoption & Engagement** — adoption by feature and plan, engagement segments and usage trend.
+
+![Feature Adoption & Engagement](tableau/screenshots/02_feature_adoption_engagement.png)
+
+**3 · Retention & Churn** — cohort retention, churn by segment with confidence intervals, and churn reasons.
+
 ![Retention & Churn](tableau/screenshots/03_retention_churn.png)
 
 Every KPI tile matches `outputs/tables/headline_kpis.csv` — the dashboards, the Python pipeline and the SQL views all report the same numbers.
